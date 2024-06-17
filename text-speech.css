@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.background{
+    position: absolute;
+    background-image: url(backgroundimg.avif);
+    background-position: left;
+    width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    padding-top: 70px;
+    font-weight: 500;
+}
+
+span{
+    color:#f74848;
+    font-weight: 700;
+}
+
+.mainbox{
+    width: 950px;
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.t-s-box p{
+    font-size: 1.2rem;
+    padding: 25px;
+    color: rgb(0, 0, 0);
+
+}
+
+.t-s-box .text-box{
+    background: rgba(255, 255, 255, 0.342);
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+
+.text-box textarea{
+    width: 100%;
+    padding: 0 25px 29px 29px;
+    height: 320px;
+    resize: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    line-height: 25px;
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+.speech-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button img{
+    width: 47px;
+}
+.speech-box button{
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border-radius: 31px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    margin-left: 223px;
+    background-color: #aa4895;
+    display: flex;
+  align-items: center;
+}
+
+select{
+    flex: 1;
+    color: #fff;
+    background: #528bb1;
+    padding: 0 31px;
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 35px;
+    font-size: inherit;
+}
+
+@media (min-width:360px) and (max-width:500px){
+    .mainbox{
+        width: 408px;
+    }
+    .speech-box button{
+        margin-left: 106px;
+        margin-top: 20px;
+    }
+    select{
+        padding: 0 13px;
+        height: 49px;
+        font-size: 12px;
+    }
+    .speech-box{
+        display: block;
+    }
+    h1{
+        font-size: 26px;
+        padding-top: 54px;
+    }
+
+}
+
+@media (max-width:360px){
+    h1{
+        padding-top: 54px;
+        font-size: 22px;
+    }
+    .mainbox{
+        width: 408px;
+    }
+    .speech-box button{
+        margin-left: 106px;
+        margin-top: 20px;
+    }
+    select{
+        padding: 0 24px;
+        height: 49px;
+        font-size: 11px;
+    }
+    .speech-box{
+        display: block;
+    }
+    .t-s-box p{
+        font-size: 1rem;
+    }
+}
+@media (min-width:500px) and (max-width:650px){
+
+   
+    .speech-box button{
+        margin-left: 200px;
+        margin-top: 20px;
+    }
+    .speech-box{
+        display: block;
+    }
+
+}
+@media (min-width:650px) and (max-width:750px){
+
+    .mainbox{
+        width: 658px;
+    }
+    .speech-box button{
+        margin-left: 15px;
+    }
+    select{
+        padding: 0 14px;
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width:750px) and (max-width:890px){
+
+
+    .speech-box button{
+        margin-left: 15px;
+    }
+    select{
+        padding: 0 14px;
+        font-size: 15px;
+    }
+
+}
+
+
